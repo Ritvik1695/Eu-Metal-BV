@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: .8rem 1.2rem;
     z-index: 999;
     /* position: sticky; */
     top: 0;
@@ -69,6 +69,18 @@
     font-size: small;
   
 }
+.nav-button{
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    background: yellow;
+    color:black;
+    padding: 0 40px;
+    font-weight: 600 bolder;
+    font-size: 10px;
+
+}
+
 #navbar li a:hover{
     color:yellow;
 }
@@ -435,6 +447,7 @@ font-size: 20px;
     margin: 15px 0;
     border: 1px solid #cecece;
     text-align: center;
+    padding-left: 100px;
 }
 .cnct_form {
    margin-left: 50px;
@@ -813,3 +826,61 @@ figure {
 .side-info p{
     margin-bottom: 20px;
 }
+
+
+/***********************DROPDOWN*************************************************/
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+    background-color: black;
+    color: white;
+    width: 400px;
+  }
+  
+  .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /*************************PRODUCT PAGES MENU*****************/
+  .inf figure img{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+ }
+  .content {
+    padding: 0 15px;
+    display: flex;
+    margin-top: 200px;
+  }
+  .left-section{
+    display: flex;
+
+  }
+  .content h2{
+    display: block;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+  .content p{
+    display: block;
+    line-height: 1.7;
+    opacity: 0.7;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .left-section{
+    margin-bottom: 150px;
+  }
+  .inf{
+    margin-bottom: 120px;
+  }
