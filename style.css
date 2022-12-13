@@ -21,21 +21,21 @@
 }
 #nav li{
     list-style: none;
-    padding: 0 20px; 
+    padding: 0 1.25rem; 
 }
 #nav li a{
     text-decoration: none;    
     font-size: small;
     color: black;
-    font-size:15px;
+    font-size:.9rem;
 }
 #nav li a i{
-    margin-right: 2px;
+    margin-right: .12px;
 }
 .ahead{
     text-decoration: none;  
     color: black;
-    border-bottom: 3px solid #ffff00;
+    border-bottom: .18rem solid #ffff00;
 }
 /* Section 2*/
 .logo{
@@ -44,10 +44,10 @@
 #navigation{
     display: flex;
     align-items: center;
-    justify-content:stretch;
-    padding: 20px 40px;
+    justify-content:space-between;
+    padding: 1.25rem 1rem;
     background-color: rgb(12, 9, 9);
-    box-shadow: 0 5px 15px rgba(0, 0,0,0.06);
+    box-shadow: 0 .3rem .9rem rgba(0, 0,0,0.06);
     z-index: 999;
     /* position: sticky; */
     top: 0;
@@ -60,7 +60,7 @@
 }
 #navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 1rem;
 }
 #navbar li a{
     text-decoration: none;
@@ -70,14 +70,14 @@
   
 }
 .nav-button{
-    height: 60px;
-    line-height: 60px;
+    height: 3.75rem;
+    line-height: 3.75rem;
     display: inline-block;
     background: yellow;
     color:black;
-    padding: 0 40px;
+    padding: 0 1.25rem;
     font-weight: 600 bolder;
-    font-size: 10px;
+    font-size: .6rem;
 
 }
 
@@ -94,21 +94,21 @@ background-size: cover;
     color: white;
     font-weight: 800;
     display: block;
-    padding: 20px 40px;
+    padding: 1.25rem 2rem;
     font-size: 89px;
 }
 
 .hero p {
     color: white;
-    padding: 20px 40px;
+    padding: 1.25rem 2rem;
 font-size: 20px;
 
 }
 .hero button{
-    padding: 20px 80px;
-    margin-left: 35px;
+    padding: 1.25rem 4rem;
+    margin-left: 2.1rem;
    
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 /* Section 4*/
 #about_eu{
@@ -123,7 +123,7 @@ font-size: 20px;
 }
 #about_eu_heading{
     display: block;
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 25px;
     font-weight: 800;
 }
@@ -884,3 +884,142 @@ figure {
   .inf{
     margin-bottom: 120px;
   }
+  /******************************MEDIA QUERIES*******************************/
+  /***********mobile-width*******/
+  @media (max-width:768px){
+    .eu_img{
+        width: 100%;
+    }
+    #about_eu{
+        display: block;
+    }
+    #global_presence{
+        display: block;
+        font-size: larger;
+    }
+    .footer{
+        display: block;
+    }
+    .social_contact{
+        margin-bottom: 0;
+        padding-bottom: 10%;
+
+
+    }
+    .imgs{
+        display: block;
+    }
+    .hero{
+        width: 100%;
+        height: auto;
+
+    }
+    .hero h1{
+        font-weight: 800;
+        font-size: 38px;
+    }
+    .image-quote .quote-box{
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 30px;
+        top: -50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+    }
+    #news_img{
+        margin-left: 0;
+    }
+    
+    .tab-content .tab-nav{
+        
+    width: 100%;
+    position: static;
+    transform: none;
+    justify-content: center;
+    display: inline;
+    
+
+    }
+    #a{
+        height: auto;
+        width: 100%;
+    }
+    .tab-content .tab-item .content{
+        width: 100%;
+        padding: 30px;
+    }
+    .king_img{
+        display: block;
+    }
+    .king_img img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .cnct_form h2{
+        font-size: 32px;
+    }
+    .content{
+        display: block;
+    }
+    .left-section{
+        display: block;
+    }
+    .product_sec{
+        display: block;
+        width: 100%;
+    }
+    .product_sec h2{
+        font-size: 40px;
+
+    }
+    .product_sec img{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .product_sec1 img{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .product_sec1{
+        display: block;
+        width: 100%;
+    }
+    .product_sec1 h2{
+        font-size: 40px;
+
+    }
+    .custom-button{
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    #navbar li a{
+         display: none; 
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .nav-button{
+        display: none; 
+    }
+    #e {
+        display: none; 
+    }
+    #ee{
+        display: none;
+    }
+    .ahead{
+        font-size: 10px;
+        display: inline;
+    }
+
+  }
+
+
